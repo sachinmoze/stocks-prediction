@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Live Stock Prediction</h1>
+        <p>Please choose a stock to predict current market:</p>
+        <div class="list-group">
+            <a href="{% url 'apple_stock_home' %}" class="list-group-item list-group-item-action" >Apple Stock Prediction</a>
+            <a href="#" class="list-group-item list-group-item-action">Tesla Stock Prediction</a>
+            <!-- Add more options as needed -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Add your custom JavaScript here
+        $(document).ready(function() {
+            // Handle click event for Apple Stock Prediction
+            $('#apple').click(function(e) {
+                e.preventDefault();
+                alert("You chose Apple Stock Prediction.");
+                // You can add more logic here to navigate to a specific page or perform other actions
+            });
+
+            // Handle click event for Tesla Stock Prediction
+            $('#tesla').click(function(e) {
+                e.preventDefault();
+                alert("You chose Tesla Stock Prediction.");
+                // You can add more logic here to navigate to a specific page or perform other actions
+            });
+
+            // Add more click event handlers for other options as needed
+        });
+    </script>
+</body>
+</html>
