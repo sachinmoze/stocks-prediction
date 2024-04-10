@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gpz@&#guep^su=l+zo0&u8n7@6vo&(*)+!(1dsn^-^9@dj2r$+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
