@@ -37,6 +37,7 @@
 <body>
     <div class="container">
         <div>
+            <a href="{% url 'stock_home' %}">Home</a>
             <h1>Apple Stock Prediction</h1>
             <!-- Real-time stock price -->
             <p id="stockPrice">Time: <span id="time"></span></p>
@@ -162,7 +163,7 @@
             fetchStockPrice();
 
             // Update stock price every 10 seconds
-            setInterval(fetchStockPrice, 5000);
+            setInterval(fetchStockPrice, 30000);
 
             // Function to fetch real-time stock price
             function fetchStockPrice() {
